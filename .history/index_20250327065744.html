@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Autoajuda - Transforme sua Vida</title>
+    <meta name="description" content="Site de autoajuda com frases motivacionais, vídeos inspiradores e produtos para desenvolvimento pessoal">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Inspira<span>Vida</span></h1>
+                <p>Sua jornada para uma vida melhor</p>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#frase">Frase do Dia</a></li>
+                    <li><a href="#videos">Vídeos</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <div class="mobile-menu-icon">
+                    <button onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+                </div>
+            </nav>
+            <div class="mobile-menu" id="mobileMenu">
+                <ul>
+                    <li><a href="#home" onclick="toggleMenu()">Início</a></li>
+                    <li><a href="#frase" onclick="toggleMenu()">Frase do Dia</a></li>
+                    <li><a href="#videos" onclick="toggleMenu()">Vídeos</a></li>
+                    <li><a href="#produtos" onclick="toggleMenu()">Produtos</a></li>
+                    <li><a href="#contato" onclick="toggleMenu()">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção Hero -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Como você está se sentindo hoje?</h2>
+                <div class="mood-buttons">
+                    <button class="mood-btn" data-mood="happy">😊 Feliz</button>
+                    <button class="mood-btn" data-mood="neutral">😐 Normal</button>
+                    <button class="mood-btn" data-mood="sad">😔 Triste</button>
+                    <button class="mood-btn" data-mood="angry">😠 Irritado</button>
+                    <button class="mood-btn" data-mood="motivated">💪 Motivado</button>
+                </div>
+                <div class="mood-response" id="moodResponse"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Frase do Dia -->
+    <section class="daily-phrase" id="frase">
+        <div class="container">
+            <h2>Descubra sua frase motivacional</h2>
+            <p class="section-subtitle">Escolha o dia do seu aniversário e receba uma mensagem especial</p>
+            
+            <div class="phrase-container">
+                <div class="date-selector">
+                    <label for="birthday-day">Dia do seu aniversário:</label>
+                    <select id="birthday-day">
+                        <option value="">Selecione um dia</option>
+                        <!-- Os dias serão preenchidos via JavaScript -->
+                    </select>
+                    <button id="get-phrase-btn" class="btn-primary">Ver minha frase</button>
+                </div>
+                
+                <div class="phrase-result">
+                    <div id="phrase-content">
+                        <p id="selected-phrase">Sua frase especial aparecerá aqui...</p>
+                        <div id="phrase-video-container"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Vídeos Motivacionais -->
+    <section class="motivational-videos" id="videos">
+        <div class="container">
+            <h2>Vídeos para Inspirar seu Dia</h2>
+            <p class="section-subtitle">Assista e recarregue suas energias</p>
+            
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/7XFLTDQ4JMk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3>Supere seus limites</h3>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/HAnw168huqA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3>O poder da mente</h3>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/78nsxRxbf4w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3>Transformando sonhos em realidade</h3>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/4q1dgn_C0AU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3>Resiliência e crescimento</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Produtos -->
+    <section class="products" id="produtos">
+        <div class="container">
+            <h2>Produtos para Transformação Pessoal</h2>
+            <p class="section-subtitle">Ferramentas selecionadas para sua evolução</p>
+            
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/71T5nHU+2lL._AC_UF1000,1000_QL80_.jpg" alt="Livro O Poder do Hábito">
+                    <h3>O Poder do Hábito</h3>
+                    <p class="product-description">Descubra como transformar seus hábitos e alcançar seus objetivos.</p>
+                    <p class="product-price">R$ 39,90</p>
+                    <a href="https://www.amazon.com.br/Poder-do-H%C3%A1bito-Charles-Duhigg/dp/8539004119" class="btn-primary" target="_blank">Comprar Agora</a>
+                </div>
+                
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/81dQwQlmAXL._AC_UF1000,1000_QL80_.jpg" alt="Livro Mindset">
+                    <h3>Mindset: A Nova Psicologia do Sucesso</h3>
+                    <p class="product-description">Aprenda a desenvolver um mindset de crescimento para alcançar seu potencial.</p>
+                    <p class="product-price">R$ 42,50</p>
+                    <a href="https://www.amazon.com.br/Mindset-Carol-S-Dweck/dp/8547000244" class="btn-primary" target="_blank">Comprar Agora</a>
+                </div>
+                
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/71aFt4+OTOL._AC_UF1000,1000_QL80_.jpg" alt="Livro Hábitos Atômicos">
+                    <h3>Hábitos Atômicos</h3>
+                    <p class="product-description">Um método fácil e comprovado de criar bons hábitos e abandonar os maus.</p>
+                    <p class="product-price">R$ 47,92</p>
+                    <a href="https://www.amazon.com.br/H%C3%A1bitos-At%C3%B4micos-James-Clear/dp/8550807569" class="btn-primary" target="_blank">Comprar Agora</a>
+                </div>
+                
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/71+2hYQNtUL._AC_UF1000,1000_QL80_.jpg" alt="Livro O Milagre da Manhã">
+                    <h3>O Milagre da Manhã</h3>
+                    <p class="product-description">Transforme sua vida antes das 8 horas da manhã.</p>
+                    <p class="product-price">R$ 34,90</p>
+                    <a href="https://www.amazon.com.br/Milagre-Manh%C3%A3-Hal-Elrod/dp/857542758X" class="btn-primary" target="_blank">Comprar Agora</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section class="contact" id="contato">
+        <div class="container">
+            <h2>Fale Conosco</h2>
+            <p class="section-subtitle">Envie sua mensagem, dúvida ou sugestão</p>
+            
+            <form id="contact-form" action="https://formsubmit.co/jaelsondev345@gmail.com" method="POST">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://yourdomain.com/thanks.html">
+                
+                <div class="form-group">
+                    <label for="name">Seu Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Seu Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Sua Mensagem:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit" class="btn-primary">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <div class="logo">
+                        <h1>Inspira<span>Vida</span></h1>
+                    </div>
+                    <p>Nosso objetivo é inspirar e motivar pessoas a alcançarem seu potencial máximo e viverem uma vida plena e feliz.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section links">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#frase">Frase do Dia</a></li>
+                        <li><a href="#videos">Vídeos</a></li>
+                        <li><a href="#produtos">Produtos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section contact-info">
+                    <h3>Informações de Contato</h3>
+                    <p><i class="fas fa-envelope"></i> jaelsondev345@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Desenvolvido por Jaelson Santos</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 InspiraVida. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

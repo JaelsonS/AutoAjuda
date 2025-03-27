@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspiração Diária - Autoajuda e Motivação</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Inspiração<span>Diária</span></h1>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#frases">Frases</a></li>
+                    <li><a href="#videos">Vídeos</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Bem-vindo ao seu espaço de crescimento pessoal</h2>
+                    <p>Encontre inspiração, motivação e ferramentas para transformar sua vida</p>
+                    <button id="mood-checker" class="btn">Como você está se sentindo hoje?</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="frases" class="daily-quote">
+            <div class="container">
+                <h2>Sua Frase do Dia</h2>
+                <div class="quote-box">
+                    <p id="daily-quote-text">Clique no botão abaixo para descobrir sua frase motivacional baseada no seu aniversário!</p>
+                    <div class="birthday-input">
+                        <label for="birthday">Digite sua data de nascimento:</label>
+                        <input type="date" id="birthday" name="birthday">
+                        <button id="get-quote" class="btn">Obter Minha Frase</button>
+                    </div>
+                </div>
+                <div id="quote-video" class="video-container"></div>
+            </div>
+        </section>
+
+        <section id="videos" class="motivational-videos">
+            <div class="container">
+                <h2>Vídeos Motivacionais</h2>
+                <div class="video-grid">
+                    <div class="video-item">
+                        <iframe src="https://www.youtube.com/embed/7XFLTDQ4JMk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h3>Supere seus limites</h3>
+                    </div>
+                    <div class="video-item">
+                        <iframe src="https://www.youtube.com/embed/RcGyVTAoXEU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"tar allowfullscreen></iframe>
+                        <h3>O poder da mente</h3>
+                    </div>
+                    <div class="video-item">
+                        <iframe src="https://www.youtube.com/embed/6T9mD8qAf5s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <h3>Transforme sua vida</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="produtos" class="products">
+            <div class="container">
+                <h2>Produtos Recomendados</h2>
+                <p class="section-description">Descubra produtos que podem ajudar em sua jornada de crescimento pessoal</p>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/I/71aFt4+OTOL._AC_UF1000,1000_QL80_.jpg" alt="Livro O Poder do Hábito">
+                        <h3>O Poder do Hábito</h3>
+                        <p>Charles Duhigg</p>
+                        <a href="https://www.amazon.com.br/Poder-do-H%C3%A1bito-Charles-Duhigg/dp/8539004119" class="btn" target="_blank">Comprar Agora</a>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/I/81bsw6fnUiL._AC_UF1000,1000_QL80_.jpg" alt="Livro Mindset">
+                        <h3>Mindset</h3>
+                        <p>Carol S. Dweck</p>
+                        <a href="https://www.amazon.com.br/Mindset-Carol-S-Dweck/dp/8547000244" class="btn" target="_blank">Comprar Agora</a>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://m.media-amazon.com/images/I/71aG+xDKSYL._AC_UF1000,1000_QL80_.jpg" alt="Livro Hábitos Atômicos">
+                        <h3>Hábitos Atômicos</h3>
+                        <p>James Clear</p>
+                        <a href="https://www.amazon.com.br/H%C3%A1bitos-At%C3%B4micos-James-Clear/dp/8550807569" class="btn" target="_blank">Comprar Agora</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="contact">
+            <div class="container">
+                <h2>Entre em Contato</h2>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Sua mensagem" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>Inspiração Diária</h3>
+                    <p>Um espaço dedicado ao seu crescimento pessoal e bem-estar emocional.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#frases">Frases</a></li>
+                        <li><a href="#videos">Vídeos</a></li>
+                        <li><a href="#produtos">Produtos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Redes Sociais</h3>
+                    <div class="social-icons">
+                        <a href="#" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook"></a>
+                        <a href="#" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+                        <a href="#" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Inspiração Diária. Todos os direitos reservados.</p>
+                <p>Desenvolvido por <strong>Jaelson Santos</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="mood-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Como você está se sentindo hoje?</h2>
+            <div class="mood-options">
+                <button data-mood="happy" class="mood-btn">😊 Feliz</button>
+                <button data-mood="sad" class="mood-btn">😢 Triste</button>
+                <button data-mood="angry" class="mood-btn">😠 Bravo</button>
+                <button data-mood="anxious" class="mood-btn">😰 Ansioso</button>
+                <button data-mood="tired" class="mood-btn">😴 Cansado</button>
+                <button data-mood="motivated" class="mood-btn">💪 Motivado</button>
+            </div>
+            <div id="mood-response" class="mood-response"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
