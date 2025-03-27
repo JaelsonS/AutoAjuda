@@ -74,10 +74,10 @@ document.addEventListener('DOMContentLoaded', function() {
         "4q1dgn_C0AU", // Vídeo para dia 24
         "Llq-hvuAM7g", // Vídeo para dia 25 
         "8_4rBqh6B1M", // Vídeo para dia 26 
-        "WWloIAQpMcQ", // Vídeo para dia 27 
-        "36m1o-tM05g", // Vídeo para dia 28 
-        "lg48Bi9DA54", // Vídeo para dia 29 
-        "HAnw168huqA", // Vídeo para dia 30 
+        "wnHW6o8WMas", // Vídeo para dia 27 esse
+        "WnfIs8NJFjM", // Vídeo para dia 28 esse
+        "WciF0Up4Xps", // Vídeo para dia 29 esse
+        "TQfW9KI2h4o", // Vídeo para dia 30 esse
         "7XFLTDQ4JMk"  // Vídeo para dia 31
     ];
 

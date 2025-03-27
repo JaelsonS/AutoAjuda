@@ -320,74 +320,6 @@ header .container {
 }
 
 /* Seção de Produtos */
-.product-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    text-align: center;
-    padding: 20px;
-    background-color: var(--accent-color);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: var(--shadow);
-    transition: var(--transition);
-}
-
-.product-card h3,
-.product-description,
-.product-price {
-    text-align: center; /* Garante que todos os textos fiquem alinhados */
-}
-
-.product-card h3 {
-    margin-bottom: 10px;
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-.product-description {
-    color: var(--light-text);
-    font-size: 0.9rem;
-    margin-bottom: 15px;
-}
-
-.product-price {
-    font-weight: 700;
-    color: var(--primary-color);
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-}
-
-.btn-primary {
-    display: inline-block;
-    text-decoration: none;
-    background-color: var(--primary-color);
-    color: #fff;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-weight: bold;
-    margin-top: auto; /* Empurra o botão para o final */
-    align-self: center; /* Centraliza o botão */
-}
-.product-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%; /* Garante que todas as caixas tenham a mesma altura */
-}
-
-.btn-primary {
-    display: inline-block;
-    text-decoration: none;
-    background-color: var(--primary-color);
-    color: #fff;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-weight: bold;
-    margin-top: auto; /* Empurra o botão para a parte inferior */
-    align-self: center; /* Centraliza o botão */
-}
 .products {
     background-color: var(--white);
 }
@@ -421,17 +353,14 @@ header .container {
 }
 
 .product-card h3 {
-    font-size: 1.2rem;
-    font-weight: bold;
     margin-bottom: 10px;
-    flex-grow: 1; /* Garante que os títulos tenham altura uniforme */
+    font-size: 1.2rem;
 }
 
 .product-description {
     color: var(--light-text);
     font-size: 0.9rem;
-    margin-bottom: 10px;
-    flex-grow: 1; /* Mantém a descrição alinhada em todos os cards */
+    margin-bottom: 15px;
 }
 
 .product-price {
@@ -440,16 +369,11 @@ header .container {
     font-size: 1.2rem;
     margin-bottom: 15px;
 }
-.btn-primary {
-    display: inline-block;
-    text-decoration: none;
-    background-color: var(--primary-color);
-    color: #fff;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-weight: bold;
-    margin-top: auto; /* Empurra o botão para a parte inferior */
-    align-self: center; /* Centraliza o botão */
+.btn-primary{
+    color:#000;
+    text-align: center;
+    margin-top: auto;
+    che
 }
 
 /* Seção de Contato */

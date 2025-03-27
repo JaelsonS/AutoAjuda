@@ -440,16 +440,11 @@ header .container {
     font-size: 1.2rem;
     margin-bottom: 15px;
 }
-.btn-primary {
-    display: inline-block;
-    text-decoration: none;
-    background-color: var(--primary-color);
-    color: #fff;
-    padding: 10px 15px;
-    border-radius: 5px;
-    font-weight: bold;
-    margin-top: auto; /* Empurra o botão para a parte inferior */
-    align-self: center; /* Centraliza o botão */
+.btn-primary{
+    color:#000;
+    text-align: center;
+    margin-top: auto;
+    clear: both;
 }
 
 /* Seção de Contato */
