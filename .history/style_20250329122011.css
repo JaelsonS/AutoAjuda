@@ -1,0 +1,743 @@
+/* Reset e Estilos Globais */
+* {
+    margin: 0;
+    /* Remove todas as margens padrão de elementos */
+    padding: 0;
+    /* Remove todos os preenchimentos padrão de elementos */
+    box-sizing: border-box;
+    /* Faz com que o padding e a borda sejam incluídos no tamanho total do elemento */
+}
+
+:root {
+    --primary-color: #4e54c8;
+    /* Cor primária */
+    --secondary-color: #8f94fb;
+    /* Cor secundária */
+    --accent-color: #f5f7fa;
+    /* Cor de destaque */
+    --text-color: #333;
+    /* Cor do texto */
+    --light-text: #777;
+    /* Cor do texto mais claro */
+    --white: #fff;
+    /* Cor branca */
+    --black: #000;
+    /* Cor preta */
+    --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    /* Sombra */
+    --transition: all 0.3s ease;
+    /* Transição suave para todos os elementos */
+}
+
+html {
+    scroll-behavior: smooth;
+    /* Faz a rolagem suave na página */
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* Define a fonte do corpo como Poppins */
+    line-height: 1.6;
+    /* Define a altura da linha do texto */
+    color: var(--text-color);
+    /* Define a cor do texto */
+    background-color: var(--accent-color);
+    /* Define a cor de fundo do corpo */
+    overflow-x: hidden;
+    /* Esconde o excesso de conteúdo horizontal */
+}
+
+.container {
+    width: 90%;
+    /* Define a largura do container como 90% da largura da tela */
+    max-width: 1200px;
+    /* Limita a largura máxima do container a 1200px */
+    margin: 0 auto;
+    /* Centraliza o container horizontalmente */
+    padding: 0 20px;
+    /* Adiciona um preenchimento interno de 20px nas laterais */
+}
+
+section {
+    padding: 80px 0;
+    /* Adiciona preenchimento de 80px nas partes superior e inferior de cada seção */
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: 600;
+    /* Define o peso da fonte como 600 (negrito) */
+    line-height: 1.2;
+    /* Ajusta a altura da linha para melhorar a legibilidade */
+}
+
+a {
+    text-decoration: none;
+    /* Remove o sublinhado dos links */
+    color: inherit;
+    /* Herda a cor do texto dos seus elementos pais */
+}
+
+ul {
+    list-style: none;
+    /* Remove o marcador de lista dos itens de lista */
+}
+
+img {
+    max-width: 100%;
+    /* Garante que as imagens não ultrapassem o limite de largura */
+    height: auto;
+    /* Ajusta a altura das imagens proporcionalmente */
+}
+
+.btn-primary {
+    display: inline-block;
+    /* Faz o botão ser exibido como um bloco em linha */
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    /* Aplica um gradiente no fundo do botão */
+    color: var(--white);
+    /* Define a cor do texto como branca */
+    padding: 12px 24px;
+    /* Adiciona preenchimento interno de 12px vertical e 24px horizontal */
+    border-radius: 30px;
+    /* Torna as bordas do botão arredondadas */
+    font-weight: 500;
+    /* Define o peso da fonte como 500 */
+    transition: var(--transition);
+    /* Aplica a transição suave ao botão */
+    border: none;
+    /* Remove a borda do botão */
+    cursor: pointer;
+    /* Define o cursor como mãozinha ao passar o mouse */
+    text-align: center;
+    /* Centraliza o texto dentro do botão */
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    /* Move o botão 3px para cima quando o mouse passa sobre ele */
+    box-shadow: var(--shadow);
+    /* Aplica uma sombra ao botão */
+    opacity: 0.9;
+    /* Diminui a opacidade do botão para 90% */
+}
+
+.section-subtitle {
+    color: var(--light-text);
+    /* Define a cor do subtítulo da seção */
+    margin-bottom: 40px;
+    /* Adiciona uma margem inferior de 40px */
+    text-align: center;
+    /* Centraliza o texto */
+    font-size: 1.1rem;
+    /* Define o tamanho da fonte do subtítulo */
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--white);
+    /* Define o fundo do cabeçalho como branco */
+    box-shadow: var(--shadow);
+    /* Aplica sombra ao cabeçalho */
+    position: fixed;
+    /* Define o cabeçalho como fixo no topo da página */
+    width: 100%;
+    /* Define a largura do cabeçalho como 100% */
+    top: 0;
+    /* Posiciona o cabeçalho no topo */
+    z-index: 1000;
+    /* Garante que o cabeçalho esteja acima de outros elementos */
+    transition: var(--transition);
+    /* Aplica transição suave ao cabeçalho */
+}
+
+header .container {
+    display: flex;
+    /* Exibe os elementos dentro do cabeçalho de forma flexível */
+    justify-content: space-between;
+    /* Distribui os elementos com espaço entre eles */
+    align-items: center;
+    /* Alinha os itens no centro verticalmente */
+    padding: 20px 0;
+    /* Adiciona 20px de preenchimento na parte superior e inferior */
+}
+
+.logo h1 {
+    font-size: 1.8rem;
+    /* Define o tamanho da fonte do título do logo */
+    color: var(--primary-color);/* Define a cor do título como a cor primária */
+}
+
+.logo h1 span {
+    color: var(--secondary-color);/* Define a cor do span dentro do título como a cor secundária */
+}
+
+.logo p {
+    font-size: 0.8rem;/* Define o tamanho da fonte do parágrafo como 0.8rem */
+    color: var(--light-text);/* Define a cor do texto como a cor de texto claro */
+    margin-top: -5px;/* Aplica uma margem negativa para ajustar a posição */
+}
+
+.menu ul {
+    display: flex;/* Exibe os itens do menu de forma flexível */
+}
+
+.menu ul li {
+    margin-left: 30px;/* Adiciona uma margem à esquerda de 30px nos itens do menu */
+}
+
+.menu ul li a {
+    font-weight: 500; /* Define o peso da fonte do link como 500 */
+    transition: var(--transition); /* Aplica a transição suave ao link */
+    position: relative;/* Define o posicionamento do link como relativo */
+}
+
+.menu ul li a::after {
+    content: ''; /* Cria um pseudo-elemento vazio após o link */
+    position: absolute;/* Posiciona o pseudo-elemento de forma absoluta */
+    bottom: -5px; /* Coloca o pseudo-elemento 5px abaixo do link */
+    left: 0; /* Alinha o pseudo-elemento à esquerda */
+    width: 0; /* Define a largura do pseudo-elemento como 0 */
+    height: 2px;/* Define a altura do pseudo-elemento como 2px */
+    background-color: var(--primary-color);/* Define a cor de fundo do pseudo-elemento como a cor primária */
+    transition: var(--transition);/* Aplica transição suave ao pseudo-elemento */
+}
+
+.menu ul li a:hover::after {
+    width: 100%;/* Faz o pseudo-elemento expandir para a largura total do link ao passar o mouse */
+}
+
+.menu ul li a:hover {
+    color: var(--primary-color);/* Altera a cor do link para a cor primária ao passar o mouse */
+}
+
+.menu ul li a:hover::after {
+    width: 100%;/* Expande o pseudo-elemento para a largura total do link quando o mouse passa sobre ele */
+}
+
+.mobile-menu-icon {
+    display: none;/* Esconde o ícone do menu móvel */
+}
+
+.mobile-menu {
+    display: none;/* Esconde o menu móvel */
+}
+
+/* Seção Hero */
+.hero {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));/* Aplica um gradiente de fundo na seção */
+    color: var(--white);/* Define a cor do texto como branco */
+    padding: 180px 0 100px;/* Adiciona 180px de preenchimento na parte superior e 100px na parte inferior */
+    text-align: center; /* Centraliza o texto */
+}
+
+.hero h2 {
+    font-size: 2.5rem;/* Define o tamanho da fonte do título */
+    margin-bottom: 30px; /* Adiciona margem inferior de 30px */
+}
+
+.mood-buttons {
+    display: flex; /* Exibe os botões de humor de forma flexível */
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    flex-wrap: wrap;/* Permite que os botões quebrem a linha quando necessário */
+    gap: 15px; /* Adiciona um espaço de 15px entre os botões */
+    margin-bottom: 30px;/* Adiciona uma margem inferior de 30px */
+}
+
+.mood-btn {
+    background-color: rgba(255, 255, 255, 0.2); /* Define a cor de fundo do botão com transparência */
+    border: none;/* Remove a borda do botão */
+    color: var(--white);/* Define a cor do texto como branco */
+    padding: 10px 20px;/* Adiciona preenchimento interno de 10px vertical e 20px horizontal */
+    border-radius: 30px;/* Torna as bordas arredondadas */
+    cursor: pointer;/* Altera o cursor para mãozinha ao passar o mouse */
+    transition: var(--transition);/* Aplica transição suave */
+}
+
+.mood-btn:hover {
+    background-color: var(--white); /* Altera a cor de fundo para branco ao passar o mouse */
+    color: var(--primary-color); /* Altera a cor do texto para a cor primária */
+    box-shadow: var(--shadow); /* Aplica sombra ao botão */
+}
+
+.mood-response {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Seção Frase do Dia */
+.daily-phrase {
+    background-color: var(--white);
+    text-align: center;
+}
+
+.phrase-container {
+    background-color: var(--accent-color);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: var(--shadow);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.date-selector {
+    margin-bottom: 30px;
+}
+
+.date-selector label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.date-selector select {
+    padding: 12px 20px;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 20px;
+    font-size: 1rem;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 1em;
+}
+
+.phrase-result {
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+#selected-phrase {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+#phrase-video-container {
+    margin-top: 30px;
+    aspect-ratio: 16/9;
+}
+
+#phrase-video-container iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* Seção de Vídeos Motivacionais */
+.motivational-videos {
+    background-color: var(--accent-color);
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.video-card {
+    background-color: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.video-card:hover {
+    transform: translateY(-10px);
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.video-card h3 {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Seção de Produtos */
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.product-card h3,
+.product-description,
+.product-price {
+    text-align: center; /* Garante que todos os textos fiquem alinhados */
+}
+
+.product-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.product-description {
+    color: var(--light-text);
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.product-price {
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: auto; /* Empurra o botão para o final */
+    align-self: center; /* Centraliza o botão */
+}
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Garante que todas as caixas tenham a mesma altura */
+}
+
+.btn-primary {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: auto; /* Empurra o botão para a parte inferior */
+    align-self: center; /* Centraliza o botão */
+}
+.products {
+    background-color: var(--white);
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    text-align: center;
+    padding: 20px;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-card img {
+    border-radius: 5px;
+    margin-bottom: 15px;
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.product-card h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    flex-grow: 1; /* Garante que os títulos tenham altura uniforme */
+}
+
+.product-description {
+    color: var(--light-text);
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    flex-grow: 1; /* Mantém a descrição alinhada em todos os cards */
+}
+
+.product-price {
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+.btn-primary {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: auto; /* Empurra o botão para a parte inferior */
+    align-self: center; /* Centraliza o botão */
+}
+
+/* Seção de Contato */
+.contact {
+    background-color: var(--accent-color);
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(78, 84, 200, 0.2);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #2a2e4d;
+    color: var(--white);
+    padding: 60px 0 0;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-section h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: var(--secondary-color);
+}
+
+.footer-section.about p {
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-3px);
+}
+
+.footer-section.links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section.links ul li a {
+    transition: var(--transition);
+    display: inline-block;
+}
+
+.footer-section.links ul li a:hover {
+    color: var(--secondary-color);
+    transform: translateX(5px);
+}
+
+.footer-section.contact-info p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.footer-section.contact-info i {
+    margin-right: 10px;
+    color: var(--secondary-color);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .menu ul {
+        display: none;
+    }
+    
+    .mobile-menu-icon {
+        display: block;
+    }
+    
+    .mobile-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--white);
+        box-shadow: var(--shadow);
+        padding: 20px;
+    }
+    
+    .mobile-menu.active {
+        display: block;
+    }
+    
+    .mobile-menu ul li {
+        margin: 15px 0;
+    }
+    
+    .mobile-menu ul li a {
+        display: block;
+        padding: 10px;
+    }
+    
+    .hero {
+        padding: 150px 0 80px;
+    }
+    
+    .hero h2 {
+        font-size: 2rem;
+    }
+    
+    section {
+        padding: 60px 0;
+    }
+    
+    .video-grid, .product-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+    
+    .mood-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .mood-btn {
+        width: 100%;
+        max-width: 200px;
+        justify-content: center;
+    }
+    
+    #contact-form {
+        padding: 30px 20px;
+    }
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.8s ease forwards;
+}

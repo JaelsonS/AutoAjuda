@@ -701,8 +701,10 @@ footer {
         /* Faz o menu ocupar toda a largura */
         background-color: var(--white);
         /* Define a cor de fundo do menu móvel */
-        box-shadow: var(--shadow);/* Aplica uma sombra ao redor do menu */
-        padding: 20px;/* Adiciona preenchimento ao redor do menu */
+        box-shadow: var(--shadow);
+        /* Aplica uma sombra ao redor do menu */
+        padding: 20px;
+        /* Adiciona preenchimento ao redor do menu */
     }
 
     .mobile-menu.active {

@@ -1,72 +1,106 @@
 /* Reset e Estilos Globais */
 * {
-    margin: 0;/* Remove todas as margens padrão de elementos */
-    padding: 0;/* Remove todos os preenchimentos padrão de elementos */
-    box-sizing: border-box;/* Faz com que o padding e a borda sejam incluídos no tamanho total do elemento */
+    margin: 0;
+    /* Remove todas as margens padrão de elementos */
+    padding: 0;
+    /* Remove todos os preenchimentos padrão de elementos */
+    box-sizing: border-box;
+    /* Faz com que o padding e a borda sejam incluídos no tamanho total do elemento */
 }
 
 :root {
-    --primary-color: #4e54c8;/* Cor primária */
-    --secondary-color: #8f94fb;/* Cor secundária */
-    --accent-color: #f5f7fa;/* Cor de destaque */
-    --text-color: #333;/* Cor do texto */
-    --light-text: #777; /* Cor do texto mais claro */
-    --white: #fff; /* Cor branca */
-    --black: #000; /* Cor preta */
-    --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);/* Sombra */
-    --transition: all 0.3s ease;/* Transição suave para todos os elementos */
+    --primary-color: #4e54c8;
+    /* Cor primária */
+    --secondary-color: #8f94fb;
+    /* Cor secundária */
+    --accent-color: #f5f7fa;
+    /* Cor de destaque */
+    --text-color: #333;
+    /* Cor do texto */
+    --light-text: #777;
+    /* Cor do texto mais claro */
+    --white: #fff;
+    /* Cor branca */
+    --black: #000;
+    /* Cor preta */
+    --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    /* Sombra */
+    --transition: all 0.3s ease;
+    /* Transição suave para todos os elementos */
 }
 
 html {
-    scroll-behavior: smooth;/* Faz a rolagem suave na página */
+    scroll-behavior: smooth;
+    /* Faz a rolagem suave na página */
 }
 
 body {
-    font-family: 'Poppins', sans-serif;/* Define a fonte do corpo como Poppins */
-    line-height: 1.6;/* Define a altura da linha do texto */
-    color: var(--text-color);/* Define a cor do texto */
-    background-color: var(--accent-color);/* Define a cor de fundo do corpo */
-    overflow-x: hidden;/* Esconde o excesso de conteúdo horizontal */
+    font-family: 'Poppins', sans-serif;
+    /* Define a fonte do corpo como Poppins */
+    line-height: 1.6;
+    /* Define a altura da linha do texto */
+    color: var(--text-color);
+    /* Define a cor do texto */
+    background-color: var(--accent-color);
+    /* Define a cor de fundo do corpo */
+    overflow-x: hidden;
+    /* Esconde o excesso de conteúdo horizontal */
 }
 
 .container {
-    width: 90%;/* Define a largura do container como 90% da largura da tela */
-    max-width: 1200px;/* Limita a largura máxima do container a 1200px */
-    margin: 0 auto;/* Centraliza o container horizontalmente */
-    padding: 0 20px;/* Adiciona um preenchimento interno de 20px nas laterais */
+    width: 90%;
+    /* Define a largura do container como 90% da largura da tela */
+    max-width: 1200px;
+    /* Limita a largura máxima do container a 1200px */
+    margin: 0 auto;
+    /* Centraliza o container horizontalmente */
+    padding: 0 20px;
+    /* Adiciona um preenchimento interno de 20px nas laterais */
 }
 
 section {
-    padding: 80px 0;/* Adiciona preenchimento de 80px nas partes superior e inferior de cada seção */
+    padding: 80px 0;
+    /* Adiciona preenchimento de 80px nas partes superior e inferior de cada seção */
 }
 
 h1,
 h2,
 h3,
 h4 {
-    font-weight: 600;/* Define o peso da fonte como 600 (negrito) */
-    line-height: 1.2;/* Ajusta a altura da linha para melhorar a legibilidade */
+    font-weight: 600;
+    /* Define o peso da fonte como 600 (negrito) */
+    line-height: 1.2;
+    /* Ajusta a altura da linha para melhorar a legibilidade */
 }
 
 a {
-    text-decoration: none;/* Remove o sublinhado dos links */
-    color: inherit; /* Herda a cor do texto dos seus elementos pais */
+    text-decoration: none;
+    /* Remove o sublinhado dos links */
+    color: inherit;
+    /* Herda a cor do texto dos seus elementos pais */
 }
 
 ul {
-    list-style: none; /* Remove o marcador de lista dos itens de lista */
+    list-style: none;
+    /* Remove o marcador de lista dos itens de lista */
 }
 
 img {
-    max-width: 100%;/* Garante que as imagens não ultrapassem o limite de largura */
-    height: auto;/* Ajusta a altura das imagens proporcionalmente */
+    max-width: 100%;
+    /* Garante que as imagens não ultrapassem o limite de largura */
+    height: auto;
+    /* Ajusta a altura das imagens proporcionalmente */
 }
 
 .btn-primary {
-    display: inline-block;/* Faz o botão ser exibido como um bloco em linha */
-    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));/* Aplica um gradiente no fundo do botão */
-    color: var(--white);/* Define a cor do texto como branca */
-    padding: 12px 24px;/* Adiciona preenchimento interno de 12px vertical e 24px horizontal */
+    display: inline-block;
+    /* Faz o botão ser exibido como um bloco em linha */
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    /* Aplica um gradiente no fundo do botão */
+    color: var(--white);
+    /* Define a cor do texto como branca */
+    padding: 12px 24px;
+    /* Adiciona preenchimento interno de 12px vertical e 24px horizontal */
     border-radius: 30px; /* Torna as bordas do botão arredondadas */
     font-weight: 500;/* Define o peso da fonte como 500 */
     transition: var(--transition);/* Aplica a transição suave ao botão */
@@ -205,576 +239,480 @@ header .container {
 
 .mood-response {
     background-color: rgba(255, 255, 255, 0.1);
-    /* Cor de fundo com transparência */
     padding: 20px;
-    /* Espaçamento interno */
     border-radius: 10px;
-    /* Bordas arredondadas */
     max-width: 600px;
-    /* Largura máxima */
     margin: 0 auto;
-    /* Centraliza o bloco */
     font-size: 1.1rem;
-    /* Tamanho da fonte */
     line-height: 1.6;
-    /* Altura da linha */
 }
 
 /* Seção Frase do Dia */
 .daily-phrase {
     background-color: var(--white);
-    /* Cor de fundo branca */
     text-align: center;
-    /* Centraliza o texto */
 }
 
 .phrase-container {
     background-color: var(--accent-color);
-    /* Cor de fundo do container */
     border-radius: 15px;
-    /* Bordas arredondadas */
     padding: 30px;
-    /* Espaçamento interno */
     box-shadow: var(--shadow);
-    /* Sombra */
     max-width: 800px;
-    /* Largura máxima */
     margin: 0 auto;
-    /* Centraliza o bloco */
 }
 
 .date-selector {
     margin-bottom: 30px;
-    /* Margem inferior */
 }
 
 .date-selector label {
     display: block;
-    /* Faz o label ser exibido como bloco */
     margin-bottom: 10px;
-    /* Margem inferior */
     font-weight: 500;
-    /* Peso da fonte */
 }
 
 .date-selector select {
     padding: 12px 20px;
-    /* Espaçamento interno */
     border-radius: 30px;
-    /* Bordas arredondadas */
     border: 1px solid #ddd;
-    /* Borda cinza */
     width: 100%;
-    /* Largura total */
     max-width: 200px;
-    /* Largura máxima */
     margin: 0 auto 20px;
-    /* Margem superior e inferior */
     font-size: 1rem;
-    /* Tamanho da fonte */
     appearance: none;
-    /* Remove o estilo padrão do seletor */
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
-    /* Ícone para a seta */
     background-repeat: no-repeat;
-    /* Não repete o ícone */
     background-position: right 10px center;
-    /* Posiciona o ícone à direita */
     background-size: 1em;
-    /* Define o tamanho do ícone */
 }
 
 .phrase-result {
     background-color: var(--white);
-    /* Cor de fundo branca */
     padding: 30px;
-    /* Espaçamento interno */
     border-radius: 10px;
-    /* Bordas arredondadas */
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
-    /* Sombra */
 }
 
 #selected-phrase {
     font-size: 1.2rem;
-    /* Tamanho da fonte */
     font-style: italic;
-    /* Estilo da fonte em itálico */
     margin-bottom: 20px;
-    /* Margem inferior */
     color: var(--primary-color);
-    /* Cor primária */
     font-weight: 500;
-    /* Peso da fonte */
 }
 
 #phrase-video-container {
     margin-top: 30px;
-    /* Margem superior */
     aspect-ratio: 16/9;
-    /* Aspecto de 16:9 */
 }
 
 #phrase-video-container iframe {
     width: 100%;
-    /* Largura total */
     height: 100%;
-    /* Altura total */
     border-radius: 10px;
-    /* Bordas arredondadas */
 }
 
 /* Seção de Vídeos Motivacionais */
 .motivational-videos {
     background-color: var(--accent-color);
-    /* Cor de fundo */
 }
 
 .video-grid {
     display: grid;
-    /* Exibe como grid */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    /* Layout responsivo */
     gap: 30px;
-    /* Espaço entre os itens */
 }
 
 .video-card {
     background-color: var(--white);
-    /* Cor de fundo branca */
     border-radius: 10px;
-    /* Bordas arredondadas */
     overflow: hidden;
-    /* Oculta qualquer conteúdo que ultrapasse os limites */
     box-shadow: var(--shadow);
-    /* Sombra */
     transition: var(--transition);
-    /* Transição suave */
 }
 
 .video-card:hover {
     transform: translateY(-10px);
-    /* Efeito de elevação ao passar o mouse */
 }
 
 .video-wrapper {
     position: relative;
-    /* Permite o posicionamento absoluto do iframe */
-    padding-bottom: 56.25%;
-    /* Mantém a proporção 16:9 */
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
     height: 0;
-    /* Zera a altura */
     overflow: hidden;
-    /* Oculta o excesso de conteúdo */
 }
 
 .video-wrapper iframe {
     position: absolute;
-    /* Posiciona de forma absoluta dentro do contêiner */
     top: 0;
-    /* Alinha ao topo */
     left: 0;
-    /* Alinha à esquerda */
     width: 100%;
-    /* Largura total */
     height: 100%;
-    /* Altura total */
     border: none;
-    /* Remove a borda */
 }
 
 .video-card h3 {
     padding: 20px;
-    /* Espaçamento interno */
     text-align: center;
-    /* Centraliza o texto */
 }
 
 /* Seção de Produtos */
 .product-card {
     display: flex;
-    /* Flexbox para estrutura */
     flex-direction: column;
-    /* Itens em coluna */
     justify-content: space-between;
-    /* Espaço igual entre os itens */
     height: 100%;
-    /* Altura total */
     text-align: center;
-    /* Alinha o texto ao centro */
     padding: 20px;
-    /* Espaçamento interno */
     background-color: var(--accent-color);
-    /* Cor de fundo */
     border-radius: 10px;
-    /* Bordas arredondadas */
     overflow: hidden;
-    /* Oculta qualquer conteúdo que ultrapasse */
     box-shadow: var(--shadow);
-    /* Sombra */
     transition: var(--transition);
-    /* Transição suave */
 }
 
 .product-card h3,
 .product-description,
 .product-price {
-    text-align: center;
-    /* Garante que todos os textos fiquem centralizados */
+    text-align: center; /* Garante que todos os textos fiquem alinhados */
 }
 
 .product-card h3 {
     margin-bottom: 10px;
-    /* Margem inferior */
     font-size: 1.2rem;
-    /* Tamanho da fonte */
     font-weight: bold;
-    /* Peso da fonte */
 }
 
 .product-description {
     color: var(--light-text);
-    /* Cor da descrição */
     font-size: 0.9rem;
-    /* Tamanho da fonte */
     margin-bottom: 15px;
-    /* Margem inferior */
 }
 
 .product-price {
     font-weight: 700;
-    /* Peso da fonte */
     color: var(--primary-color);
-    /* Cor primária */
     font-size: 1.2rem;
-    /* Tamanho da fonte */
     margin-bottom: 15px;
-    /* Margem inferior */
 }
 
 .btn-primary {
     display: inline-block;
-    /* Exibe como bloco inline */
     text-decoration: none;
-    /* Remove o sublinhado */
     background-color: var(--primary-color);
-    /* Cor de fundo */
     color: #fff;
-    /* Cor do texto */
     padding: 10px 15px;
-    /* Espaçamento interno */
     border-radius: 5px;
-    /* Bordas arredondadas */
     font-weight: bold;
-    /* Peso da fonte */
-    margin-top: auto;
-    /* Empurra o botão para o final */
-    align-self: center;
-    /* Centraliza o botão */
+    margin-top: auto; /* Empurra o botão para o final */
+    align-self: center; /* Centraliza o botão */
+}
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Garante que todas as caixas tenham a mesma altura */
+}
+
+.btn-primary {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: auto; /* Empurra o botão para a parte inferior */
+    align-self: center; /* Centraliza o botão */
+}
+.products {
+    background-color: var(--white);
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    text-align: center;
+    padding: 20px;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-card img {
+    border-radius: 5px;
+    margin-bottom: 15px;
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.product-card h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    flex-grow: 1; /* Garante que os títulos tenham altura uniforme */
+}
+
+.product-description {
+    color: var(--light-text);
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    flex-grow: 1; /* Mantém a descrição alinhada em todos os cards */
+}
+
+.product-price {
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+.btn-primary {
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: auto; /* Empurra o botão para a parte inferior */
+    align-self: center; /* Centraliza o botão */
 }
 
 /* Seção de Contato */
 .contact {
     background-color: var(--accent-color);
-    /* Define a cor de fundo para a seção de contato */
 }
 
 #contact-form {
     max-width: 600px;
-    /* Limita a largura máxima do formulário de contato */
     margin: 0 auto;
-    /* Centraliza o formulário horizontalmente */
     background-color: var(--white);
-    /* Define a cor de fundo do formulário */
     padding: 40px;
-    /* Adiciona preenchimento ao redor do formulário */
     border-radius: 10px;
-    /* Arredonda os cantos do formulário */
     box-shadow: var(--shadow);
-    /* Aplica uma sombra ao redor do formulário */
 }
 
 .form-group {
     margin-bottom: 20px;
-    /* Define o espaçamento entre os campos do formulário */
 }
 
 .form-group label {
     display: block;
-    /* Faz o label ocupar toda a linha */
     margin-bottom: 8px;
-    /* Adiciona um espaço abaixo do label */
     font-weight: 500;
-    /* Define o peso da fonte do label */
 }
 
 .form-group input,
 .form-group textarea {
     width: 100%;
-    /* Faz os campos de entrada e textarea ocuparem toda a largura disponível */
     padding: 12px 15px;
-    /* Adiciona preenchimento interno aos campos */
     border: 1px solid #ddd;
-    /* Define uma borda leve ao redor dos campos */
     border-radius: 5px;
-    /* Arredonda os cantos dos campos */
     font-family: 'Poppins', sans-serif;
-    /* Define a fonte dos campos */
     transition: var(--transition);
-    /* Aplica uma transição para efeitos visuais */
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    /* Remove a borda padrão do foco */
     border-color: var(--primary-color);
-    /* Define a cor da borda quando o campo recebe foco */
     box-shadow: 0 0 0 3px rgba(78, 84, 200, 0.2);
-    /* Aplica um sombreamento ao redor do campo */
 }
 
 .form-group textarea {
     resize: vertical;
-    /* Permite o redimensionamento vertical da textarea */
     min-height: 120px;
-    /* Define uma altura mínima para a textarea */
 }
 
 /* Rodapé */
 footer {
     background-color: #2a2e4d;
-    /* Define a cor de fundo para o rodapé */
     color: var(--white);
-    /* Define a cor do texto do rodapé */
     padding: 60px 0 0;
-    /* Adiciona preenchimento ao redor do rodapé */
 }
 
 .footer-content {
     display: grid;
-    /* Define o layout do rodapé como grid */
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    /* Cria colunas responsivas */
     gap: 40px;
-    /* Adiciona espaço entre as colunas */
     margin-bottom: 40px;
-    /* Adiciona espaçamento abaixo do conteúdo */
 }
 
 .footer-section h3 {
     font-size: 1.3rem;
-    /* Define o tamanho da fonte para os títulos das seções */
     margin-bottom: 20px;
-    /* Adiciona espaço abaixo do título */
     position: relative;
-    /* Define a posição do título como relativa para usar o pseudo-elemento */
     padding-bottom: 10px;
-    /* Adiciona espaço abaixo do título */
 }
 
 .footer-section h3::after {
     content: '';
-    /* Cria um pseudo-elemento após o título */
     position: absolute;
-    /* Posiciona o pseudo-elemento de forma absoluta */
     bottom: 0;
-    /* Posiciona o pseudo-elemento na parte inferior */
     left: 0;
-    /* Posiciona o pseudo-elemento à esquerda */
     width: 50px;
-    /* Define a largura do pseudo-elemento */
     height: 2px;
-    /* Define a altura do pseudo-elemento */
     background-color: var(--secondary-color);
-    /* Define a cor do pseudo-elemento */
 }
 
 .footer-section.about p {
     margin-bottom: 20px;
-    /* Adiciona espaçamento abaixo dos parágrafos na seção "about" */
 }
 
 .social-links {
     display: flex;
-    /* Exibe os links sociais em uma linha */
     gap: 15px;
-    /* Adiciona espaço entre os links sociais */
 }
 
 .social-links a {
     display: flex;
-    /* Exibe os ícones de redes sociais de forma flexível */
     align-items: center;
-    /* Alinha os itens no centro */
     justify-content: center;
-    /* Justifica o conteúdo no centro */
     width: 40px;
-    /* Define a largura do ícone */
     height: 40px;
-    /* Define a altura do ícone */
     background-color: rgba(255, 255, 255, 0.1);
-    /* Define o fundo do ícone */
     border-radius: 50%;
-    /* Torna o ícone circular */
     transition: var(--transition);
-    /* Aplica uma transição suave para o hover */
 }
 
 .social-links a:hover {
     background-color: var(--secondary-color);
-    /* Muda a cor de fundo ao passar o mouse */
     transform: translateY(-3px);
-    /* Aplica um efeito de levitação no hover */
 }
 
 .footer-section.links ul li {
     margin-bottom: 10px;
-    /* Adiciona espaçamento entre os itens da lista */
 }
 
 .footer-section.links ul li a {
     transition: var(--transition);
-    /* Aplica uma transição suave aos links */
     display: inline-block;
-    /* Exibe os links como blocos inline */
 }
 
 .footer-section.links ul li a:hover {
     color: var(--secondary-color);
-    /* Muda a cor do link ao passar o mouse */
     transform: translateX(5px);
-    /* Aplica um efeito de deslocamento no hover */
 }
 
 .footer-section.contact-info p {
     display: flex;
-    /* Exibe as informações de contato de forma flexível */
     align-items: center;
-    /* Alinha os itens no centro */
     margin-bottom: 15px;
-    /* Adiciona espaço abaixo das informações de contato */
 }
 
 .footer-section.contact-info i {
     margin-right: 10px;
-    /* Adiciona espaço à direita do ícone */
     color: var(--secondary-color);
-    /* Define a cor do ícone */
 }
 
 .footer-bottom {
     text-align: center;
-    /* Centraliza o texto no rodapé inferior */
     padding: 20px 0;
-    /* Adiciona espaçamento ao redor do texto */
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    /* Adiciona uma linha de separação no topo */
     font-size: 0.9rem;
-    /* Define o tamanho da fonte */
     color: rgba(255, 255, 255, 0.7);
-    /* Define a cor do texto com transparência */
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
     .menu ul {
         display: none;
-        /* Esconde o menu principal em telas pequenas */
     }
-
+    
     .mobile-menu-icon {
         display: block;
-        /* Exibe o ícone do menu móvel */
     }
-
+    
     .mobile-menu {
         display: none;
-        /* Esconde o menu móvel por padrão */
         position: absolute;
-        /* Posiciona o menu móvel de forma absoluta */
         top: 100%;
-        /* Coloca o menu abaixo do ícone */
         left: 0;
-        /* Alinha o menu à esquerda */
         width: 100%;
-        /* Faz o menu ocupar toda a largura */
         background-color: var(--white);
-        /* Define a cor de fundo do menu móvel */
-        box-shadow: var(--shadow);/* Aplica uma sombra ao redor do menu */
-        padding: 20px;/* Adiciona preenchimento ao redor do menu */
+        box-shadow: var(--shadow);
+        padding: 20px;
     }
-
+    
     .mobile-menu.active {
-        display: block;/* Exibe o menu móvel quando ativo */
+        display: block;
     }
-
+    
     .mobile-menu ul li {
-        margin: 15px 0;/* Adiciona espaçamento entre os itens do menu móvel */
+        margin: 15px 0;
     }
-
+    
     .mobile-menu ul li a {
-        display: block;/* Exibe os links como blocos no menu móvel */
-        padding: 10px;/* Adiciona preenchimento ao redor dos links */
+        display: block;
+        padding: 10px;
     }
-
+    
     .hero {
-        padding: 150px 0 80px;/* Ajusta o padding da seção hero para telas pequenas */
+        padding: 150px 0 80px;
     }
-
+    
     .hero h2 {
         font-size: 2rem;
-        /* Diminui o tamanho da fonte do título da seção hero */
     }
-
+    
     section {
-        padding: 60px 0;/* Ajusta o padding das seções em telas pequenas */
+        padding: 60px 0;
     }
-
-    .video-grid,
-    .product-grid {
-        grid-template-columns: 1fr;/* Ajusta a grid para uma coluna em telas pequenas */
+    
+    .video-grid, .product-grid {
+        grid-template-columns: 1fr;
     }
-
+    
     .footer-content {
-        grid-template-columns: 1fr;/* Ajusta o rodapé para uma coluna em telas pequenas */
+        grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 480px) {
     .hero h2 {
-        font-size: 1.8rem;/* Diminui ainda mais o tamanho do título na seção hero */
+        font-size: 1.8rem;
     }
-
+    
     .mood-buttons {
-        flex-direction: column;/* Empilha os botões de humor verticalmente */
-        align-items: center;/* Centraliza os botões de humor */
+        flex-direction: column;
+        align-items: center;
     }
-
+    
     .mood-btn {
-        width: 100%;/* Faz os botões de humor ocuparem toda a largura */
-        max-width: 200px;/* Define uma largura máxima para os botões */
-        justify-content: center;/* Centraliza o conteúdo dos botões */
+        width: 100%;
+        max-width: 200px;
+        justify-content: center;
     }
-
+    
     #contact-form {
-        padding: 30px 20px;/* Ajusta o padding do formulário para telas pequenas */
+        padding: 30px 20px;
     }
 }
 
 /* Animações */
 @keyframes fadeIn {
     from {
-        opacity: 0;/* Começa a animação com opacidade 0 */
-        transform: translateY(20px);/* Começa a animação com deslocamento vertical */
+        opacity: 0;
+        transform: translateY(20px);
     }
-
     to {
-        opacity: 1;/* Finaliza a animação com opacidade 1 */
-        transform: translateY(0);/* Finaliza a animação sem deslocamento */
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
 .fade-in {
-    animation: fadeIn 0.8s ease forwards;/* Aplica a animação fadeIn com duração de 0.8s */
+    animation: fadeIn 0.8s ease forwards;
 }

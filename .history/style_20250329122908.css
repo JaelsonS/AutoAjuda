@@ -701,21 +701,27 @@ footer {
         /* Faz o menu ocupar toda a largura */
         background-color: var(--white);
         /* Define a cor de fundo do menu móvel */
-        box-shadow: var(--shadow);/* Aplica uma sombra ao redor do menu */
-        padding: 20px;/* Adiciona preenchimento ao redor do menu */
+        box-shadow: var(--shadow);
+        /* Aplica uma sombra ao redor do menu */
+        padding: 20px;
+        /* Adiciona preenchimento ao redor do menu */
     }
 
     .mobile-menu.active {
-        display: block;/* Exibe o menu móvel quando ativo */
+        display: block;
+        /* Exibe o menu móvel quando ativo */
     }
 
     .mobile-menu ul li {
-        margin: 15px 0;/* Adiciona espaçamento entre os itens do menu móvel */
+        margin: 15px 0;
+        /* Adiciona espaçamento entre os itens do menu móvel */
     }
 
     .mobile-menu ul li a {
-        display: block;/* Exibe os links como blocos no menu móvel */
-        padding: 10px;/* Adiciona preenchimento ao redor dos links */
+        display: block;
+        /* Exibe os links como blocos no menu móvel */
+        padding: 10px;
+        /* Adiciona preenchimento ao redor dos links */
     }
 
     .hero {

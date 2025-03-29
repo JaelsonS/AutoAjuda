@@ -473,308 +473,231 @@ header .container {
     /* Centraliza o botão */
 }
 
+/* Continuando a mesma lógica... */
+
 /* Seção de Contato */
 .contact {
     background-color: var(--accent-color);
-    /* Define a cor de fundo para a seção de contato */
 }
 
 #contact-form {
     max-width: 600px;
-    /* Limita a largura máxima do formulário de contato */
     margin: 0 auto;
-    /* Centraliza o formulário horizontalmente */
     background-color: var(--white);
-    /* Define a cor de fundo do formulário */
     padding: 40px;
-    /* Adiciona preenchimento ao redor do formulário */
     border-radius: 10px;
-    /* Arredonda os cantos do formulário */
     box-shadow: var(--shadow);
-    /* Aplica uma sombra ao redor do formulário */
 }
 
 .form-group {
     margin-bottom: 20px;
-    /* Define o espaçamento entre os campos do formulário */
 }
 
 .form-group label {
     display: block;
-    /* Faz o label ocupar toda a linha */
     margin-bottom: 8px;
-    /* Adiciona um espaço abaixo do label */
     font-weight: 500;
-    /* Define o peso da fonte do label */
 }
 
 .form-group input,
 .form-group textarea {
     width: 100%;
-    /* Faz os campos de entrada e textarea ocuparem toda a largura disponível */
     padding: 12px 15px;
-    /* Adiciona preenchimento interno aos campos */
     border: 1px solid #ddd;
-    /* Define uma borda leve ao redor dos campos */
     border-radius: 5px;
-    /* Arredonda os cantos dos campos */
     font-family: 'Poppins', sans-serif;
-    /* Define a fonte dos campos */
     transition: var(--transition);
-    /* Aplica uma transição para efeitos visuais */
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    /* Remove a borda padrão do foco */
     border-color: var(--primary-color);
-    /* Define a cor da borda quando o campo recebe foco */
     box-shadow: 0 0 0 3px rgba(78, 84, 200, 0.2);
-    /* Aplica um sombreamento ao redor do campo */
 }
 
 .form-group textarea {
     resize: vertical;
-    /* Permite o redimensionamento vertical da textarea */
     min-height: 120px;
-    /* Define uma altura mínima para a textarea */
 }
 
 /* Rodapé */
 footer {
     background-color: #2a2e4d;
-    /* Define a cor de fundo para o rodapé */
     color: var(--white);
-    /* Define a cor do texto do rodapé */
     padding: 60px 0 0;
-    /* Adiciona preenchimento ao redor do rodapé */
 }
 
 .footer-content {
     display: grid;
-    /* Define o layout do rodapé como grid */
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    /* Cria colunas responsivas */
     gap: 40px;
-    /* Adiciona espaço entre as colunas */
     margin-bottom: 40px;
-    /* Adiciona espaçamento abaixo do conteúdo */
 }
 
 .footer-section h3 {
     font-size: 1.3rem;
-    /* Define o tamanho da fonte para os títulos das seções */
     margin-bottom: 20px;
-    /* Adiciona espaço abaixo do título */
     position: relative;
-    /* Define a posição do título como relativa para usar o pseudo-elemento */
     padding-bottom: 10px;
-    /* Adiciona espaço abaixo do título */
 }
 
 .footer-section h3::after {
     content: '';
-    /* Cria um pseudo-elemento após o título */
     position: absolute;
-    /* Posiciona o pseudo-elemento de forma absoluta */
     bottom: 0;
-    /* Posiciona o pseudo-elemento na parte inferior */
     left: 0;
-    /* Posiciona o pseudo-elemento à esquerda */
     width: 50px;
-    /* Define a largura do pseudo-elemento */
     height: 2px;
-    /* Define a altura do pseudo-elemento */
     background-color: var(--secondary-color);
-    /* Define a cor do pseudo-elemento */
 }
 
 .footer-section.about p {
     margin-bottom: 20px;
-    /* Adiciona espaçamento abaixo dos parágrafos na seção "about" */
 }
 
 .social-links {
     display: flex;
-    /* Exibe os links sociais em uma linha */
     gap: 15px;
-    /* Adiciona espaço entre os links sociais */
 }
 
 .social-links a {
     display: flex;
-    /* Exibe os ícones de redes sociais de forma flexível */
     align-items: center;
-    /* Alinha os itens no centro */
     justify-content: center;
-    /* Justifica o conteúdo no centro */
     width: 40px;
-    /* Define a largura do ícone */
     height: 40px;
-    /* Define a altura do ícone */
     background-color: rgba(255, 255, 255, 0.1);
-    /* Define o fundo do ícone */
     border-radius: 50%;
-    /* Torna o ícone circular */
     transition: var(--transition);
-    /* Aplica uma transição suave para o hover */
 }
 
 .social-links a:hover {
     background-color: var(--secondary-color);
-    /* Muda a cor de fundo ao passar o mouse */
     transform: translateY(-3px);
-    /* Aplica um efeito de levitação no hover */
 }
 
 .footer-section.links ul li {
     margin-bottom: 10px;
-    /* Adiciona espaçamento entre os itens da lista */
 }
 
 .footer-section.links ul li a {
     transition: var(--transition);
-    /* Aplica uma transição suave aos links */
     display: inline-block;
-    /* Exibe os links como blocos inline */
 }
 
 .footer-section.links ul li a:hover {
     color: var(--secondary-color);
-    /* Muda a cor do link ao passar o mouse */
     transform: translateX(5px);
-    /* Aplica um efeito de deslocamento no hover */
 }
 
 .footer-section.contact-info p {
     display: flex;
-    /* Exibe as informações de contato de forma flexível */
     align-items: center;
-    /* Alinha os itens no centro */
     margin-bottom: 15px;
-    /* Adiciona espaço abaixo das informações de contato */
 }
 
 .footer-section.contact-info i {
     margin-right: 10px;
-    /* Adiciona espaço à direita do ícone */
     color: var(--secondary-color);
-    /* Define a cor do ícone */
 }
 
 .footer-bottom {
     text-align: center;
-    /* Centraliza o texto no rodapé inferior */
     padding: 20px 0;
-    /* Adiciona espaçamento ao redor do texto */
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    /* Adiciona uma linha de separação no topo */
     font-size: 0.9rem;
-    /* Define o tamanho da fonte */
     color: rgba(255, 255, 255, 0.7);
-    /* Define a cor do texto com transparência */
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
     .menu ul {
         display: none;
-        /* Esconde o menu principal em telas pequenas */
     }
-
+    
     .mobile-menu-icon {
         display: block;
-        /* Exibe o ícone do menu móvel */
     }
-
+    
     .mobile-menu {
         display: none;
-        /* Esconde o menu móvel por padrão */
         position: absolute;
-        /* Posiciona o menu móvel de forma absoluta */
         top: 100%;
-        /* Coloca o menu abaixo do ícone */
         left: 0;
-        /* Alinha o menu à esquerda */
         width: 100%;
-        /* Faz o menu ocupar toda a largura */
         background-color: var(--white);
-        /* Define a cor de fundo do menu móvel */
-        box-shadow: var(--shadow);/* Aplica uma sombra ao redor do menu */
-        padding: 20px;/* Adiciona preenchimento ao redor do menu */
+        box-shadow: var(--shadow);
+        padding: 20px;
     }
-
+    
     .mobile-menu.active {
-        display: block;/* Exibe o menu móvel quando ativo */
+        display: block;
     }
-
+    
     .mobile-menu ul li {
-        margin: 15px 0;/* Adiciona espaçamento entre os itens do menu móvel */
+        margin: 15px 0;
     }
-
+    
     .mobile-menu ul li a {
-        display: block;/* Exibe os links como blocos no menu móvel */
-        padding: 10px;/* Adiciona preenchimento ao redor dos links */
+        display: block;
+        padding: 10px;
     }
-
+    
     .hero {
-        padding: 150px 0 80px;/* Ajusta o padding da seção hero para telas pequenas */
+        padding: 150px 0 80px;
     }
-
+    
     .hero h2 {
         font-size: 2rem;
-        /* Diminui o tamanho da fonte do título da seção hero */
     }
-
+    
     section {
-        padding: 60px 0;/* Ajusta o padding das seções em telas pequenas */
+        padding: 60px 0;
     }
-
-    .video-grid,
-    .product-grid {
-        grid-template-columns: 1fr;/* Ajusta a grid para uma coluna em telas pequenas */
+    
+    .video-grid, .product-grid {
+        grid-template-columns: 1fr;
     }
-
+    
     .footer-content {
-        grid-template-columns: 1fr;/* Ajusta o rodapé para uma coluna em telas pequenas */
+        grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 480px) {
     .hero h2 {
-        font-size: 1.8rem;/* Diminui ainda mais o tamanho do título na seção hero */
+        font-size: 1.8rem;
     }
-
+    
     .mood-buttons {
-        flex-direction: column;/* Empilha os botões de humor verticalmente */
-        align-items: center;/* Centraliza os botões de humor */
+        flex-direction: column;
+        align-items: center;
     }
-
+    
     .mood-btn {
-        width: 100%;/* Faz os botões de humor ocuparem toda a largura */
-        max-width: 200px;/* Define uma largura máxima para os botões */
-        justify-content: center;/* Centraliza o conteúdo dos botões */
+        width: 100%;
+        max-width: 200px;
+        justify-content: center;
     }
-
+    
     #contact-form {
-        padding: 30px 20px;/* Ajusta o padding do formulário para telas pequenas */
+        padding: 30px 20px;
     }
 }
 
 /* Animações */
 @keyframes fadeIn {
     from {
-        opacity: 0;/* Começa a animação com opacidade 0 */
-        transform: translateY(20px);/* Começa a animação com deslocamento vertical */
+        opacity: 0;
+        transform: translateY(20px);
     }
-
     to {
-        opacity: 1;/* Finaliza a animação com opacidade 1 */
-        transform: translateY(0);/* Finaliza a animação sem deslocamento */
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
 .fade-in {
-    animation: fadeIn 0.8s ease forwards;/* Aplica a animação fadeIn com duração de 0.8s */
+    animation: fadeIn 0.8s ease forwards;
 }
