@@ -87,7 +87,6 @@ img {
     font-size: 1.1rem;
 }
 
-/* Cabeçalho */
 header {
     background-color: var(--white);
     box-shadow: var(--shadow);
@@ -108,7 +107,7 @@ header .container {
 .logo h1 {
     font-size: 1.8rem;
     color: var(--primary-color);
-
+}
 .logo h1 span {
     color: var(--secondary-color);
 }
